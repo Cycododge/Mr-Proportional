@@ -1,0 +1,54 @@
+#wrapper { width:640px; height:480px; }
+
+* { cursor:default; }
+input { cursor:text; }
+a { cursor:pointer; }
+
+div#content { padding:10px; }
+div#content .banner { text-align:center; }
+div#content input[type="text"] { width:74px; margin-left:5px; text-align:center; border-radius:4px; outline:none; }
+div#content input[type="checkbox"] { cursor:default; }
+
+div#content .nav { margin:0 auto; border-right:1px solid #777; border-top:1px solid #777; border-radius:4px; padding:0 5px 35px 5px; text-align:left; }
+div#content .nav .tab div { display:inline-block; margin:0 3px;border:1px solid #000;padding:3px;border-radius:0px 0px 7px 7px;border-top:none; }
+div#content .nav .tab div:hover { background:#A9BCC6; cursor:pointer; text-shadow:none; }
+div#content .nav .tab .selected { font-weight:bold; }
+div#content .nav .tab .selected:hover { background:#fff; cursor:default; }
+div#content .nav .stored { float:right; text-align:right; margin-top:-19px; display:none; }
+div#content .nav .stored span { font-weight:bold; }
+div#content .nav .stored div { display:inline-block; font-weight:normal; }
+
+div#content .button { width:100px; padding:2px 4px; border:1px solid #000; border-radius:4px; }
+div#content .button:hover { background:#A9BCC6; cursor:pointer; text-shadow:none; }
+
+div#content .calc { float:left; width:78%; position:relative; }
+div#content .calc .help { position:absolute;left:4px;top:-22px;border:1px solid black;padding:2px 7px;border-radius:5px 5px 0px 0px; font-weight:bold; }
+
+div#content .calc .get { margin:20px auto 0 auto; border:2px solid #000; border-radius:8px; padding:5px; width:80%; text-align:center; position:relative; }
+div#content .calc .get > div { width:45%; display:inline-block; }
+div#content .calc .get .button { position:absolute; right:-2px; bottom:-27px; }
+
+div#content .calc .adjust { display:none; margin:20px 0 0 20px; border:2px solid #000; border-radius:8px; padding:5px; width:150px; text-align:right; position:relative; }
+div#content .calc .adjust input { margin-right:5px; }
+
+div#content .calc .options { display:none; margin:10px 0 0 20px; padding-left:3px; width:130px; position:relative; }
+div#content .calc .options div { margin-top:7px; float:right; }
+div#content .calc .options input, div#content .calc .options select { position:absolute; right:-30px; }
+div#content .calc .options .text { float:left; }
+div#content .calc .options select { height:17px; width:33px; font-size:10px; outline:none; }
+
+div#content .calc .demo { border:2px solid #348BB8; border-radius:5px; background-color:#00a2ff; display:none; position:absolute; top:0; left:190px; text-align:center; }
+div#content .calc .demo .ratio { font-size:20px; width:298px; }
+div#content .calc .demo .ratio div, div#content .calc .demo .ratio_hover div { display:inline-block; margin:0 5px; }
+div#content .calc .demo .ratio_hover { display:none; font-size:18px; position:fixed; border:1px solid #000; border-radius:inherit; background:#fff; box-shadow:3px 2px 7px 0px #111; z-index:999; }
+
+div#content .presets { float:right; width:20%; text-align:right; border-top:1px solid #777; border-right:1px solid #777; border-radius:4px; padding:3px 5px; }
+div#content .presets .head { text-align:right; padding:3px 0; font-weight:bold; margin-bottom:10px; }
+div#content .presets .list div { cursor:pointer; margin:3px 0; padding:2px 10px 2px 0; border:1px solid #fff; text-shadow:none; }
+div#content .presets .list div:hover { border:1px solid #348BB8; border-radius:3px; background:#00a2ff; }
+
+div#content .footer { border:1px solid #000; border-radius:4px; position:absolute; width:620px; bottom:10px; }
+div#content .footer div { display:inline-block; margin:3px auto; width:50%; text-align:center; font-weight:bold; }
+div#content .footer span { font-size:10px; margin-right:5px; }
+div#content .footer a { text-decoration:none; color:#DC2121; padding-right:7px; border-right:2px solid #fff; }
+div#content .footer div a:hover { border-right:2px solid #000; }

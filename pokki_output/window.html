@@ -1,0 +1,110 @@
+<!doctype html>
+<!--
+#  _____                        _             _             
+# / ____|                      | |           | |
+#| |     _   _   ___  ___    __| |  ___    __| |  __ _   ___ 
+#| |    | | | | / __|/ _ \  / _` | / _ \  / _` | / _` | / _ \
+#| |____| |_| || (__| (_) || (_| || (_) || (_| || (_| ||  __/
+# \_____|\__, | \___|\___/  \__,_| \___/  \__,_| \__, | \___|
+#         __/ |                                   __/ |
+#        |___/                                   |___/
+
+//Build 1
+//7.15.2012
+-->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- Pokki Init -->
+    <link rel="stylesheet" href="css/html5reset-1.6.1.css" type="text/css" /><!-- CSS reset -->
+    <link rel="stylesheet" href="css/default.css" type="text/css" /><!-- Loading pop-up styling -->
+    <link rel="stylesheet" href="css/animation.css" type="text/css" />
+    <script type="text/javascript" src="js/lib/GAPokki.js"></script><!-- Loading Google Analytics for Pokki wrapper -->
+    <script type="text/javascript" src="js/lib/LocalStore.js"></script><!-- Loading utility class for localStorage interaction -->
+    <script type="text/javascript" src="js/app.js"></script><!-- Loading application files -->
+    <script type="text/javascript" src="js/window.js"></script><!-- Loading pop-up logic -->
+    <!-- Cycododge CSS -->
+    <link rel="stylesheet" href="css/cycododge.css" type="text/css" />
+  </head>
+  <body>
+    <div id="wrapper">
+        <div id="content">
+        	<!-- Header -->
+            <div class="banner"><img src="img/banner.png" width="465" height="100" /></div>
+    
+            <!-- Navigation -->
+            <div class="nav">
+                <div class="tab"><div id="seed" class="selected">New Seed</div></div>
+                <div class="stored">
+                	<span>Current Seed</span><br />
+                    <div class="w">0</div> x <div class="h">0</div>
+                </div>
+            </div>
+            
+            <!-- Calculation Area -->
+            <div class="calc">
+            	
+                <!-- New Seed -->
+                <div class="get">
+                	<span class="help">Enter your starting dimensions (seed).</span>
+                	<div class="w">Width <input type="text" value="0" autofocus /></div>
+                	<div class="h">Height <input type="text" value="0" /></div>
+                	<span class="button">Continue</span>
+                </div>
+                
+                <!-- Seed Adjustments -->
+                <div class="adjust">
+                	<div class="help">Make Adjustments</div>
+                    <div class="w">Width <input type="text" /></div>
+                    <div class="h">Height <input type="text" /></div>
+                    <div class="p">Percent <input type="text" /></div>
+                    <div class="demo">
+                    	<div class="ratio"><div class="left">0</div>:<div class="right">0</div></div>
+                        <div class="ratio_hover"><div class="left">0</div>:<div class="right">0</div></div>
+                    </div>
+                </div>
+                
+                <!-- App Options -->
+                <div class="options">
+                	<!--<div class="text">Keep Proportional</div>
+                    <div><input type="checkbox" checked></div>-->
+                    
+                    <div class="text">Enable Ratio Popup</div>
+                    <div><input id="enable_popup" type="checkbox" checked></div>
+                    
+                    <div class="text">Precision</div>
+                    <div>
+                    	<select>
+                        	<option value="0">0</option>
+                        	<option value="1">0.1</option>
+                            <option value="2">0.02</option>
+                            <option value="3">0.003</option>
+                            <option value="4">0.0004</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="presets">
+            	<div class="head">Presets</div>
+                <div class="list"></div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer"><div><span>twitter:</span> <a href="javascript:pokki.openURLInDefaultBrowser('http://twitter.com/Cycododge');">@Cycododge</a></div><div><span>website:</span> <a href="javascript:pokki.openURLInDefaultBrowser('http://cycododge.com');">cycododge.com</a></div></div>
+        </div>
+    </div>
+        
+    <div id="splash"></div>
+    <div id="atom"></div>
+    
+    <!-- Pokki Init -->
+	<script type="text/javascript">
+        ga_pokki._setAccount('UA-596722-33');
+        ga_pokki._setDomain('googleanalytics.pokki.com');
+    </script>
+    <!-- Cycododge Scripts -->
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/cycododge.js"></script>
+  </body>
+</html>
